@@ -1,0 +1,38 @@
+table 'Measures Table'
+	lineageTag: 52f986f7-89ab-4949-8820-0851ab3c2fa7
+
+	measure 'Total Customers' = COUNT(prod_Churn[Customer_ID])
+		formatString: #,0
+		lineageTag: c77db854-3d46-4a2b-8a72-2ed064a8c7c8
+
+	measure 'New Joiners' = CALCULATE(COUNT(prod_Churn[Customer_ID]) , prod_Churn[Customer_Status] = "Joined")
+		formatString: 0
+		lineageTag: b91dd6ef-ae8f-4a41-88fe-4c8f76de9e5c
+
+	measure 'Total Churn' = SUM(prod_Churn[Churn Status])
+		formatString: #,0
+		lineageTag: 335aacca-2542-452a-b91d-cd090dad9282
+
+	measure 'Churn Rate' = [Total Churn] / [Total Customers]
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: cbc08d18-e87f-40ad-ac15-8f9c39beb1b7
+
+	measure 'Count Predicted Churner' = COUNT(Predictions[Customer_ID]) + 0
+		formatString: 0
+		lineageTag: e69a8bd9-28e7-4db7-842b-471a6bb50e57
+
+	measure 'Title Predicted Churner' = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[Customer_ID])
+		lineageTag: 5f185a04-ba00-4152-8c19-673fab948c53
+
+	partition 'Measures Table' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Dummy_col = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Dummy_col", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Dummy_col"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

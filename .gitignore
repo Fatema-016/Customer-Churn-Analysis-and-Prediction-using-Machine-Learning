@@ -1,0 +1,5 @@
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,38 @@
+relationship AutoDetected_6f818c2e-fd73-4bf1-a77f-8d0b8fbb590f
+	fromColumn: prod_Churn.Age
+	toColumn: mapping_AgeGrp.Age
+
+relationship AutoDetected_c481aabf-ca90-4bfa-a5ec-a1f49d642065
+	fromColumn: prod_Churn.Tenure_in_Months
+	toColumn: mapping_TenureGrp.Tenure_in_Months
+
+relationship AutoDetected_9b000597-94f6-44f3-a567-16ed99bfb353
+	fromColumn: prod_Services.Customer_ID
+	toColumn: prod_Churn.Customer_ID
+
+relationship AutoDetected_b556166f-fd4e-424e-84a5-fd57f0f4b60d
+	isActive: false
+	fromColumn: prod_Services.Age
+	toColumn: mapping_AgeGrp.Age
+
+relationship AutoDetected_5532d31b-e393-4014-a171-2bdddf8290d0
+	isActive: false
+	fromColumn: prod_Services.Tenure_in_Months
+	toColumn: mapping_TenureGrp.Tenure_in_Months
+
+relationship AutoDetected_04604b74-17c6-40c2-9b55-1e35a7de7579
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Predictions.Customer_ID
+	toColumn: prod_Churn.Customer_ID
+
+relationship AutoDetected_8d08bc37-6e27-41cd-8cb2-e8d077068060
+	isActive: false
+	fromColumn: Predictions.Age
+	toColumn: mapping_AgeGrp.Age
+
+relationship AutoDetected_c6d9a1e7-5be4-4d10-8cf4-043ed5365abb
+	isActive: false
+	fromColumn: Predictions.Tenure_in_Months
+	toColumn: mapping_TenureGrp.Tenure_in_Months
+

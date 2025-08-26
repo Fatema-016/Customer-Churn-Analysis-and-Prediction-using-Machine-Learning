@@ -1,0 +1,51 @@
+table mapping_AgeGrp
+	lineageTag: 7a3ae13d-8e08-4bc0-8829-22ce35bfd452
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 90452c82-d73b-46cd-9c87-1a8a5f37adbb
+		summarizeBy: none
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Age Group'
+		dataType: string
+		lineageTag: bfd32ad0-ebfa-4e76-a8fd-4e8ca47e927b
+		summarizeBy: none
+		sourceColumn: Age Group
+		sortByColumn: 'Age Grp Sorting'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Age Grp Sorting'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b9d8ae7-18f6-4ffb-88e6-9bbb448c5bad
+		summarizeBy: none
+		sourceColumn: Age Grp Sorting
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mapping_AgeGrp = m
+		mode: import
+		source = ```
+				let
+				    Source = prod_Churn,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"Age"}),
+				    #"Removed Duplicates" = Table.Distinct(#"Removed Other Columns"),
+				    #"Added Custom" = Table.AddColumn(#"Removed Duplicates", "Age Group", each if [Age] < 20 then "<20" else if [Age] < 35 then "20-35" else if [Age] < 50 then "35-50" else ">50"),
+				    #"Added Custom1" = Table.AddColumn(#"Added Custom", "Age Grp Sorting", each if [Age Group] = "<20" then 1 else if [Age Group] = 
+				"20-35" then 2 else if [Age Group] = "35-50" then 3 else 4),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom1",{{"Age Grp Sorting", Int64.Type}})
+				in
+				    #"Changed Type"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

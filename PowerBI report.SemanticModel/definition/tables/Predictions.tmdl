@@ -1,0 +1,294 @@
+table Predictions
+	lineageTag: 605d9bcc-77a6-4e44-8fe1-a4adc3aa6bdc
+
+	column Customer_ID
+		dataType: string
+		lineageTag: dd57075a-79ce-41c1-8dee-0c308d738cfd
+		summarizeBy: none
+		sourceColumn: Customer_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: e042bab2-98b6-4a93-bf75-bd6ece2c48bd
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c41caf8-f32d-4b1e-acfd-5f11c3ae73e0
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column Married
+		dataType: string
+		lineageTag: 6314ae75-d183-4809-ab33-2d7f88a0ea34
+		summarizeBy: none
+		sourceColumn: Married
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: 97172e3c-2412-4e28-ad1d-d470cb4fd285
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Number of Referrals'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ebf6583-2991-4751-a3bd-f30cbbaac3d5
+		summarizeBy: sum
+		sourceColumn: Number of Referrals
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tenure_in_Months
+		dataType: int64
+		formatString: 0
+		lineageTag: 93845bc7-b1a9-47ad-81d9-8c8fe90e8c07
+		summarizeBy: sum
+		sourceColumn: Tenure_in_Months
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value_Deal
+		dataType: string
+		lineageTag: dfe937cb-2703-4033-97ba-89e99f033f7c
+		summarizeBy: none
+		sourceColumn: Value_Deal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone_Service
+		dataType: string
+		lineageTag: 85acb8bc-d45c-4ec4-bc41-f83434f5448a
+		summarizeBy: none
+		sourceColumn: Phone_Service
+
+		annotation SummarizationSetBy = Automatic
+
+	column Multiple_Lines
+		dataType: string
+		lineageTag: bcb02612-120e-4d71-9427-1a2fbf9b565d
+		summarizeBy: none
+		sourceColumn: Multiple_Lines
+
+		annotation SummarizationSetBy = Automatic
+
+	column Internet_Service
+		dataType: string
+		lineageTag: ab5a993f-c7bc-4d17-b2f4-a9c73cc86e50
+		summarizeBy: none
+		sourceColumn: Internet_Service
+
+		annotation SummarizationSetBy = Automatic
+
+	column Internet_Type
+		dataType: string
+		lineageTag: 2a74259b-da67-4f99-8879-1b383d6c3448
+		summarizeBy: none
+		sourceColumn: Internet_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Online_Security
+		dataType: string
+		lineageTag: 983c9adb-e31f-454b-a1a3-0314296f2e59
+		summarizeBy: none
+		sourceColumn: Online_Security
+
+		annotation SummarizationSetBy = Automatic
+
+	column Online_Backup
+		dataType: string
+		lineageTag: fe8ca3bd-14c6-458e-be23-58b8cd906ded
+		summarizeBy: none
+		sourceColumn: Online_Backup
+
+		annotation SummarizationSetBy = Automatic
+
+	column Device_Protection_Plan
+		dataType: string
+		lineageTag: 8792cbc3-8fe0-4756-b2bb-8dca0cd702f3
+		summarizeBy: none
+		sourceColumn: Device_Protection_Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column Premium_Support
+		dataType: string
+		lineageTag: 6f8e0683-894e-4db0-b7c6-22fa049a3baa
+		summarizeBy: none
+		sourceColumn: Premium_Support
+
+		annotation SummarizationSetBy = Automatic
+
+	column Streaming_TV
+		dataType: string
+		lineageTag: 7eae440a-ae01-4970-9578-2ae409bac303
+		summarizeBy: none
+		sourceColumn: Streaming_TV
+
+		annotation SummarizationSetBy = Automatic
+
+	column Streaming_Movies
+		dataType: string
+		lineageTag: dbee8960-95b2-46c3-a7af-0ad1bc43d1d8
+		summarizeBy: none
+		sourceColumn: Streaming_Movies
+
+		annotation SummarizationSetBy = Automatic
+
+	column Streaming_Music
+		dataType: string
+		lineageTag: d6d220e7-c796-42bf-8da8-4da9af3a1707
+		summarizeBy: none
+		sourceColumn: Streaming_Music
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unlimited_Data
+		dataType: string
+		lineageTag: e5e90709-5e58-4910-aa9a-eea3a371a82b
+		summarizeBy: none
+		sourceColumn: Unlimited_Data
+
+		annotation SummarizationSetBy = Automatic
+
+	column Contract
+		dataType: string
+		lineageTag: 10e1c52c-1d77-4c23-b28c-45cc9dc7dbe7
+		summarizeBy: none
+		sourceColumn: Contract
+
+		annotation SummarizationSetBy = Automatic
+
+	column Paperless_Billing
+		dataType: string
+		lineageTag: 23d39603-38f6-4924-bfbc-9eb28b1797b6
+		summarizeBy: none
+		sourceColumn: Paperless_Billing
+
+		annotation SummarizationSetBy = Automatic
+
+	column Payment_Method
+		dataType: string
+		lineageTag: c7b5717a-a3d9-4f97-bb7c-367f2a83c354
+		summarizeBy: none
+		sourceColumn: Payment_Method
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monthly_Charge
+		dataType: double
+		lineageTag: fea281b9-b5bc-42eb-b837-d57266d086fc
+		summarizeBy: sum
+		sourceColumn: Monthly_Charge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_Charges
+		dataType: double
+		lineageTag: 7a7c6fc3-6d6e-4188-8f00-bb997116bf0c
+		summarizeBy: sum
+		sourceColumn: Total_Charges
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_Refunds
+		dataType: double
+		lineageTag: cb160f3c-b384-43da-9f14-f3451da763ba
+		summarizeBy: sum
+		sourceColumn: Total_Refunds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_Extra_Data_Charges
+		dataType: int64
+		formatString: 0
+		lineageTag: d9d76478-58d6-4987-a787-0f98f7b15add
+		summarizeBy: sum
+		sourceColumn: Total_Extra_Data_Charges
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total_Long_Distance_Charges
+		dataType: double
+		lineageTag: 0337d0d0-b022-46b6-adc2-bc185b847b5f
+		summarizeBy: sum
+		sourceColumn: Total_Long_Distance_Charges
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_Revenue
+		dataType: double
+		lineageTag: f861cb30-51df-4774-8685-47263369bfd7
+		summarizeBy: sum
+		sourceColumn: Total_Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Customer_Status
+		dataType: string
+		lineageTag: d917d2b8-1463-4468-b14e-e9f64f7e0c4a
+		summarizeBy: none
+		sourceColumn: Customer_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Churn_Category
+		dataType: string
+		lineageTag: 075c564a-a8f6-41af-a090-457efbc27575
+		summarizeBy: none
+		sourceColumn: Churn_Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Churn_Reason
+		dataType: string
+		lineageTag: 3e1894ac-8217-4db1-a0d9-6c708133cc45
+		summarizeBy: none
+		sourceColumn: Churn_Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_Status_Predicted
+		dataType: int64
+		formatString: 0
+		lineageTag: 80589a85-f776-49b1-b7d0-d366eefe0e3c
+		summarizeBy: sum
+		sourceColumn: Customer_Status_Predicted
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Predictions = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\alefi\Downloads\Cust.Churn Analysis\Predictions.csv"),[Delimiter=",", Columns=33, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Customer_ID", type text}, {"Gender", type text}, {"Age", Int64.Type}, {"Married", type text}, {"State", type text}, {"Number of Referrals", Int64.Type}, {"Tenure_in_Months", Int64.Type}, {"Value_Deal", type text}, {"Phone_Service", type text}, {"Multiple_Lines", type text}, {"Internet_Service", type text}, {"Internet_Type", type text}, {"Online_Security", type text}, {"Online_Backup", type text}, {"Device_Protection_Plan", type text}, {"Premium_Support", type text}, {"Streaming_TV", type text}, {"Streaming_Movies", type text}, {"Streaming_Music", type text}, {"Unlimited_Data", type text}, {"Contract", type text}, {"Paperless_Billing", type text}, {"Payment_Method", type text}, {"Monthly_Charge", type number}, {"Total_Charges", type number}, {"Total_Refunds", type number}, {"Total_Extra_Data_Charges", Int64.Type}, {"Total_Long_Distance_Charges", type number}, {"Total_Revenue", type number}, {"Customer_Status", type text}, {"Churn_Category", type text}, {"Churn_Reason", type text}, {"Customer_Status_Predicted", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
