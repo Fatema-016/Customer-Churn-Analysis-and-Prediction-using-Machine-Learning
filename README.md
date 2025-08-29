@@ -57,7 +57,10 @@ This project transforms raw data into a powerful tool for strategic decision-mak
 
 ## Screenshots
 
-<p>![](./images/Churn Analysis - Prediction Report Screenshot.png)</p>
-<p>![](./images/Churn Analysis - Summary Report Screenshot.png)</p>
+
+
+![Summary Report](https://github.com/Fatema-016/Customer-Churn-Analysis-and-Prediction-using-Machine-Learning/blob/7de15927fa36544bf830c3f3328f95e6a69e3eda/images/Churn%20Analysis%20-%20Summary%20Report%20Screenshot.png)
+![Prediction Report](https://github.com/Fatema-016/Customer-Churn-Analysis-and-Prediction-using-Machine-Learning/blob/7de15927fa36544bf830c3f3328f95e6a69e3eda/images/Churn%20Analysis%20-%20Prediction%20Report%20Screenshot.png)
+
 
 
