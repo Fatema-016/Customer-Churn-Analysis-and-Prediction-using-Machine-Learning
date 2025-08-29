@@ -54,3 +54,9 @@ This project goes beyond simple analysis by providing specific, data-driven reco
 4.  **Refine Tenure-Based Marketing with Behavioral Triggers**: By leveraging the predictive model, the firm can implement a system to monitor customer behavior (e.g., usage patterns, complaints, or payment delays) and trigger personalized retention offers *before* customers show strong signs of leaving.
 
 This project transforms raw data into a powerful tool for strategic decision-making, enabling the telecom firm to move from reactive problem-solving to proactive customer retention.
+
+## Screenshots
+
+![](./images/Churn Analysis - Prediction Report Screenshot.png)
+![](./images/Churn Analysis - Summary Report Screenshot.png)
+
