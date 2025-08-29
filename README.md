@@ -58,5 +58,6 @@ This project transforms raw data into a powerful tool for strategic decision-mak
 ## Screenshots
 
 ![](./images/Churn Analysis - Prediction Report Screenshot.png)
+
 ![](./images/Churn Analysis - Summary Report Screenshot.png)
 
